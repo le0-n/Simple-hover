@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Rye', cursive;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+}
+.container .text {
+    position:relative;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(black, red);
+    text-align: center;
+    border: 1px solid rgb(21, 21, 21);
+    border-radius: 10px;
+    /* display: flex; */
+}
+.container .text h1 {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.container .text h1::after{
+    content: "😎";
+}
+.container .text h1::before {
+    content: "😏";
+}
+.container .text .line {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-left: 2px solid rgb(48,48,48);
+    border-radius: 10px;
+    color: black;
+    background-color: black;
+    transition: margin 5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.container .text:hover .line {
+    margin: 0 0 0 100%;
+}
